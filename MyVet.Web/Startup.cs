@@ -31,6 +31,10 @@ namespace MyVet.Web
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddDbContext<DataContext>(cfg=>{
+                    cfg.UseSqlServer(Configuration.GetConnectionString("DefaultConexion"));
+            });
+                
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
