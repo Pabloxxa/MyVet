@@ -71,10 +71,9 @@ namespace MyVet.Web.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(maxLength: 50, nullable: false),
                     Date = table.Column<DateTime>(nullable: false),
                     Remarks = table.Column<string>(nullable: true),
-                    IsAvailable = table.Column<string>(nullable: true),
+                    IsAvailable = table.Column<bool>(nullable: false),
                     OwnerId = table.Column<int>(nullable: true),
                     PetId = table.Column<int>(nullable: true)
                 },

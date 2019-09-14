@@ -10,7 +10,7 @@ using MyVet.Web.Data;
 namespace MyVet.Web.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20190905055717_CompleteDB")]
+    [Migration("20190910011638_CompleteDB")]
     partial class CompleteDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -29,11 +29,7 @@ namespace MyVet.Web.Migrations
 
                     b.Property<DateTime>("Date");
 
-                    b.Property<string>("IsAvailable");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(50);
+                    b.Property<bool>("IsAvailable");
 
                     b.Property<int?>("OwnerId");
 
