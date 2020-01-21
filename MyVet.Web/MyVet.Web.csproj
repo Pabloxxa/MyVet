@@ -5,6 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Activities\**" />
+    <Content Remove="Views\Activities\**" />
+    <EmbeddedResource Remove="Views\Activities\**" />
+    <None Remove="Views\Activities\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\EmployeesController.cs" />
     <Compile Remove="Migrations\20190905053643_CompleteDB.cs" />
     <Compile Remove="Migrations\20190905053643_CompleteDB.Designer.cs" />
     <Compile Remove="Migrations\20190905055717_CompleteDB.cs" />

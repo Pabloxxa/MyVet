@@ -70,9 +70,9 @@ namespace MyVet.Web.Helpers
                 false);
         }
 
-        public Task LogoutAsync()
+        public  Task LogoutAsync()
         {
-            throw new NotImplementedException();
+            return  _signInManager.SignOutAsync();
         }
     }
 }
