@@ -19,6 +19,45 @@
 @foreach (var item in Model) {
         <tr>
             <td>
+                @Html.DisplayFor(modelItem => item.User.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.Document)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.PhoneNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.CellPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.FixedPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.SecurityStamp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.PhoneNumber)
+            </td>
+            <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
